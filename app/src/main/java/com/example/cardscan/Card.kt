@@ -3,8 +3,11 @@ package com.example.cardscan
 import java.net.URL
 
 //Contains all the information from business cards
-class Card(fname: String, lname: String, phoneNumber: String, companyName: String, website: URL) {
-    lateinit var phoneNumber: String
+class Card(_fname: String, _lname: String, _phoneNumber: String, _companyName: String, _website: URL) {
+    var phoneNumber: String = _phoneNumber
+    var fname: String = _fname
+    var lname: String = _lname
+    var website: URL = _website
 
     fun formatName(){
 
